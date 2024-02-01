@@ -5,3 +5,5 @@ export { default as Favorites } from './Favorites';
 export { default as Profile } from './Profile';
 export { default as ProfileEdit } from './ProfileEdit';
 export { default as NotFound } from './NotFound';
+
+// Dica da Tia, seria necessario?;
