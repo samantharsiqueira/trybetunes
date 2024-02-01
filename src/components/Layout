@@ -1,0 +1,14 @@
+import NavBar from '../nav-bar';
+
+function Layout() {
+  return (
+    <>
+      <NavBar />
+      <footer>
+        <span>Trybe - todos os direitos reservados</span>
+      </footer>
+    </>
+  )
+}
+
+export default Layout;
