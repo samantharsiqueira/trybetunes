@@ -17,3 +17,7 @@ code {
   display: flex;
   justify-content: center;
 }
+
+.header { 
+  background-color: brown;
+}
