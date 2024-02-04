@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { getUser } from '../services/userAPI';
+import Loading from '../pages/Loading';
 
 function Header() {
   const [userName, setUserName] = useState('');
@@ -24,7 +25,7 @@ function Header() {
       <NavLink to="/favorites" data-testid="link-to-favorites">Favorites</NavLink>
       <NavLink to="/profile" data-testid="link-to-profile">Profile</NavLink>
       {loading ? (
-        <p>Carregando...</p>
+        <Loading />
       ) : (
         <p data-testid="header-user-name">{userName}</p>
       )}

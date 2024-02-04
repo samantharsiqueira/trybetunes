@@ -28,7 +28,7 @@ function Login() {
   };
 
   return (
-    <form>
+    <form onSubmit={ handleLogin }>
       <label>
         Nome
         <input
@@ -41,7 +41,7 @@ function Login() {
         />
       </label>
       <button
-        type="submit"
+        type="button"
         data-testid="login-submit-button"
         disabled={ input.length < 3 || loading }
         onClick={ handleLogin }
