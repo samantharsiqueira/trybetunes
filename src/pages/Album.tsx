@@ -43,6 +43,7 @@ function Album() {
           key={ song.trackId }
           trackName={ song.trackName }
           previewUrl={ song.previewUrl }
+          trackId={ (song as SongType).trackId } // Precisei alterar pra ficar dinamico pra incluir a imagem no map e fazer uma pra cada
         />
       ))}
     </>
